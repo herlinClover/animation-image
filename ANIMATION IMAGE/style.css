@@ -1,0 +1,137 @@
+/** {
+	margin: 0;
+	padding: 0;	
+}*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.hero {
+	display: flex;
+	width: 300px;
+	height: 300px;
+	flex-wrap: wrap;
+	margin: 150px auto;
+	/*border: 1px solid red;*/
+	/*background: #ccc;*/
+}
+
+.small-img {
+	/*border: 1px solid red;*/
+	box-sizing: border-box;
+	flex-basis: 100px;
+	cursor: pointer;
+	position: relative;
+	transition: 1s;
+	box-shadow: 27px 41px 13px 4px rgba(0, 0, 0, .3);
+
+
+}
+
+.small-img img {
+	width: 100px;
+
+}
+
+.small-img::after{
+	content: "";
+	width: 100px;
+	height: 30px;
+	bottom: -29px;
+	/*top: 0;*/
+	left: 7px;
+	position: absolute;
+	background: #2d5661;
+	transform: skewX(26deg);
+}
+
+.small-img::before{
+	content: "";
+	width: 15px;
+	height: 100px;
+	right: -14px;
+	top: 15px;
+	position: absolute;
+	background: #3c8898;
+	transform: skewY(65deg);
+}
+
+.hero:hover .small-img:nth-child(1) {
+	transform: translate(60px, 230px) rotate(360deg);
+}
+
+.hero:hover .small-img:nth-child(2) {
+	transform: translate(-260px, -150px) rotate(360deg);
+}
+
+.hero:hover .small-img:nth-child(3) {
+	transform: translate(91px, 295px) rotate(360deg);
+}
+
+.hero:hover .small-img:nth-child(4) {
+	transform: translate(440px, -220px) rotate(360deg);
+}
+
+.hero:hover .small-img:nth-child(5) {
+	transform: translate(100px, -120px) rotate(360deg);
+}
+
+.hero:hover .small-img:nth-child(6) {
+	transform: translate(370px, 320px) rotate(360deg);
+}
+
+.hero:hover .small-img:nth-child(7) {
+	transform: translate(0px, -480px) rotate(360deg);
+}
+
+.hero:hover .small-img:nth-child(8) {
+	transform: translate(-280px, -40px) rotate(360deg);
+}
+
+.hero:hover .small-img:nth-child(9) {
+	transform: translate(400px, -120px) rotate(360deg);
+}
